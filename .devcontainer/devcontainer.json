@@ -8,7 +8,6 @@
     "forwardPorts": [
         8545
     ],
-    "postCreateCommand": ". $HOME/.foundry/bin && forge --version || (curl -L https://foundry.paradigm.xyz | bash && . $HOME/.foundry/bin && foundryup -y)",
     "customizations": {
         "vscode": {
             "settings": {
