@@ -1,8 +1,10 @@
 # Dependencies
 node_modules/
 
-# Build output
-dist/
+# Hardhat build artifacts
+artifacts/
+cache/
+typechain-types/
 
 # Logs
 *.log
@@ -12,9 +14,10 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-# Environment variables
+# Environment variables (never commit secrets)
 .env
 .env.local
 
 # IDE
 .vscode/settings.json
+.idea/

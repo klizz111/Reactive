@@ -1,5 +1,5 @@
 {
-  "name": "Reactive Network Dev Environment",
+  "name": "Reactive Network Smart Contract Dev Environment",
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
@@ -7,45 +7,28 @@
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "20"
-    },
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.11"
     }
   },
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-vscode.vscode-typescript-next",
-        "dbaeumer.vscode-eslint",
+        "NomicFoundation.hardhat-solidity",
+        "tintinweb.solidity-visual-auditor",
         "esbenp.prettier-vscode",
-        "ms-python.python",
-        "ms-python.pylance",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-next",
         "eamodio.gitlens",
-        "streetsidesoftware.code-spell-checker",
-        "ms-vscode-remote.remote-containers",
-        "humao.rest-client",
-        "mechatroner.rainbow-csv"
+        "humao.rest-client"
       ],
       "settings": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.tabSize": 2,
-        "typescript.tsdk": "node_modules/typescript/lib",
+        "solidity.defaultCompiler": "localNodeModule",
         "terminal.integrated.defaultProfile.linux": "bash"
       }
     }
   },
   "postCreateCommand": "npm install",
-  "forwardPorts": [3000, 8080],
-  "portsAttributes": {
-    "3000": {
-      "label": "App",
-      "onAutoForward": "notify"
-    },
-    "8080": {
-      "label": "API Server",
-      "onAutoForward": "notify"
-    }
-  },
   "remoteUser": "node"
 }

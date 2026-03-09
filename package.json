@@ -1,29 +1,25 @@
 {
   "name": "reactive-network",
   "version": "1.0.0",
-  "description": "Reactive Network Studying - A dev environment for learning reactive programming with network applications",
-  "main": "dist/index.js",
+  "description": "Ethereum smart contract dev environment for Reactive Network (https://reactive.network/)",
+  "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts",
-    "watch": "tsc --watch",
-    "examples": "ts-node examples/",
-    "lint": "eslint src/**/*.ts --ext .ts",
-    "format": "prettier --write \"src/**/*.ts\" \"examples/**/*.ts\""
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "deploy:reactive": "hardhat run scripts/deploy.ts --network reactive"
   },
   "dependencies": {
-    "rxjs": "^7.8.1",
-    "axios": "^1.6.7",
-    "ws": "^8.16.0"
+    "@openzeppelin/contracts": "^5.4.0",
+    "ethers": "^6.13.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.5",
-    "@types/ws": "^8.5.10",
-    "@typescript-eslint/eslint-plugin": "^6.19.1",
-    "@typescript-eslint/parser": "^6.19.1",
-    "eslint": "^8.56.0",
-    "prettier": "^3.2.4",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@types/node": "^20.0.0",
+    "dotenv": "^16.5.0",
+    "hardhat": "^2.26.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
