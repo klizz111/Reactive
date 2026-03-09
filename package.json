@@ -1,0 +1,30 @@
+{
+  "name": "reactive-network",
+  "version": "1.0.0",
+  "description": "Reactive Network Studying - A dev environment for learning reactive programming with network applications",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc --watch",
+    "examples": "ts-node examples/",
+    "lint": "eslint src/**/*.ts --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\" \"examples/**/*.ts\""
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1",
+    "axios": "^1.6.7",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/ws": "^8.5.10",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
