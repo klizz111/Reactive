@@ -1,0 +1,9 @@
+⠊] Compiling...
+[⠒] Compiling 1 files with Solc 0.8.34
+[⠰] Installing Solc version 0.8.34
+[⠔] Successfully installed Solc 0.8.34
+[⠒] Solc 0.8.34 finished in 239.25ms
+Compiler run successful!
+Deployer: 0x2f7E63A65b25E30Fe2efF496b695a28d428178B4
+Deployed to: 0x941cF722E4a982fa6EB331B64062B707fEbF7810
+Transaction hash: 0x3d78288b63c87ccf42be2b1d1fdd4b6d577768670e10fdb4c04792a9bdb84888
