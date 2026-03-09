@@ -10,9 +10,6 @@
     ],
     "customizations": {
         "vscode": {
-            "settings": {
-                "terminal.integrated.shell.linux": "/bin/bash"
-            },
             "extensions": [
                 "nomicfoundation.hardhat-vscode",
                 "NomicFoundation.hardhat-solidity"
