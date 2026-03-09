@@ -1,0 +1,23 @@
+{
+    "name": "Foundry Codespace",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "remoteUser": "vscode",
+    "forwardPorts": [
+        8545
+    ],
+    "postCreateCommand": ". $HOME/.foundry/bin && forge --version || (curl -L https://foundry.paradigm.xyz | bash && . $HOME/.foundry/bin && foundryup -y)",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "nomicfoundation.hardhat-vscode",
+                "NomicFoundation.hardhat-solidity"
+            ]
+        }
+    }
+}
