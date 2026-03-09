@@ -1,13 +1,7 @@
 {
     "name": "Foundry Codespace",
-    "build": {
-        "dockerfile": "Dockerfile",
-        "context": ".."
-    },
-    "remoteUser": "vscode",
-    "forwardPorts": [
-        8545
-    ],
+    "image": "ghcr.io/foundry-rs/foundry:nightly-98b769ea4a29e5ee75de1976d73c11787455bb8e",
+    "remoteUser": "root",
     "customizations": {
         "vscode": {
             "extensions": [
