@@ -1,9 +1,22 @@
-⠊] Compiling...
-[⠒] Compiling 1 files with Solc 0.8.34
-[⠰] Installing Solc version 0.8.34
-[⠔] Successfully installed Solc 0.8.34
-[⠒] Solc 0.8.34 finished in 239.25ms
+[⠆] Compiling...
+No files changed, compilation skipped
+Deployer: 0x82113ABc3a12A8E6528Cad43955614D11E2Ec1d7
+Deployed to: 0x52b428521a4531BCD065edcC2d544434FE33dC60
+Transaction hash: 0x7899ee81e93f5b1975d3120fc11a71cb1d4a54cf1d81ea64b8ba0d8015b388a3
+
+┌─[root@codforge create --broadcast --rpc-url $DESTINATION_RPC --private-key $DESTINATION_PRIVATE_KEY mission_01/BasicDemoL1Callback.sol:BasicDemoL1Callback --value 0.02ether --constructor-args $DESTINATION_CALLBACK_PROXY_ADDR
+[⠊] Compiling...
+[⠒] Compiling 5 files with Solc 0.8.34
+[⠆] Solc 0.8.34 finished in 1.10s
 Compiler run successful!
-Deployer: 0x2f7E63A65b25E30Fe2efF496b695a28d428178B4
-Deployed to: 0x941cF722E4a982fa6EB331B64062B707fEbF7810
-Transaction hash: 0x3d78288b63c87ccf42be2b1d1fdd4b6d577768670e10fdb4c04792a9bdb84888
+Deployer: 0x82113ABc3a12A8E6528Cad43955614D11E2Ec1d7
+Deployed to: 0x9344c68FCEc8f5D2B562bf230a53536975Da832c
+Transaction hash: 0x61750bee659298a07845c76190f7015d5be0e9d237e387640bc748fcf88f5687
+
+┌─[root@codespaces-bd27ca] - [/workspaces/Reactive/mission_01] - [Wed Mar 11, 02:05]
+└─[$]> forge create --broadcast --rpc-url $REACTIVE_RPC --private-key $REACTIVE_PRIVATE_KEY mission_01/BasicDemoReactiveContract.sol:BasicDemoReactiveContract --value 0.001ether --constructor-args $SYSTEM_CONTRACT_ADDR $ORIGIN_CHAIN_ID $DESTINATION_CHAIN_ID $ORIGIN_ADDR 0x8cabf31d2b1b11ba52dbb302817a3c9c83e4b2a5194d35121ab1354d69f6a4cb $CALLBACK_ADDR
+[⠊] Compiling...
+No files changed, compilation skipped
+Deployer: 0x82113ABc3a12A8E6528Cad43955614D11E2Ec1d7
+Deployed to: 0x9844FCC21B5404246E450529c65F73ADb0c84e14
+Transaction hash: 0xf5c1ed45a34a6c84a4ae72b1107d44d04feaef478338dc3567d27c79c43e9362
