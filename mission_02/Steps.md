@@ -1,0 +1,1 @@
+forge create --broadcast --rpc-url $REACTIVE_RPC --private-key $REACTIVE_PRIVATE_KEY mission_02/UniswapDemoStopOrderReactive.sol:UniswapDemoStopOrderReactive --value 0.01ether --constructor-args $UNISWAP_V2_PAIR_ADDR $CALLBACK_ADDR $CLIENT_WALLET true 1000 1234
